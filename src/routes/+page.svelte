@@ -11,30 +11,39 @@
 
     <section class="bottom-mobile">
         <section class="buttons">
-            <button popovertarget="skills-popover">SHOW SKILLS</button>
+            <button class="popover-button" popovertarget="skills-popover">SHOW SKILLS</button>
                 <div id="skills-popover" popover>
-                    <button class="popover-close" popovertarget="skills-popover" popovertargetaction="hide">
+                    <div class="title-close-container">
+                        <h2>Skills</h2>
+                        <button class="popover-close" popovertarget="skills-popover" popovertargetaction="hide">
+                            <span>Close &#10006;</span>
+                        </button>
+                    </div>
+                    <div class="skills-container">
+                        <ul class="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.JS</li>
+                        </ul>
+                        <ul class="skills">
+                            <li>EJS</li>
+                            <li>Svelte</li>
+                            <li>OpenAI</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+
+            <button class="popover-button" popovertarget="projects-popover">SHOW PROJECTS</button>
+            <div popover id="projects-popover">
+                <div class="title-close-container">
+                    <h2>Projects</h2>
+                    <button class="popover-close" popovertarget="projects-popover" popovertargetaction="hide">
                         <span>Close &#10006;</span>
                     </button>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Node.JS</li>
-                        <li>EJS</li>
-                        <li>Svelte</li>
-                        <li>OpenAI</li>
-                        <li>Figma</li>
-                    </ul>
                 </div>
-            <button popovertarget="projects-popover">SHOW PROJECTS</button>
-            <div popover id="projects-popover">
-                <button class="popover-close" popovertarget="projects-popover" popovertargetaction="hide">
-                    <span>Close &#10006;</span>
-                </button>
-                <h2>Projects</h2>
-                <ul>
+                <ul class="project-list">
                     <li><a href="https://r20222.github.io/FDND-First-Year-Portfolio/" title="First Year Portfolio" target="_blank">FDND First Year Portfolio &#8599</a></li>
                     <li><a href="https://mars-rover-photos.onrender.com/" title="Mars Rover Photos" target="_blank">Mars Rover Photos &#8599</a></li>
                     <li><a href="https://nasa-astronomy-picture-of-the-day.onrender.com/" title="NASA Astronomy Picture Of The Day" target="_blank">NASA Astronomy Picture Of The Day &#8599</a></li>
@@ -72,11 +81,14 @@
       display: flex;
       flex-direction: column;
       max-width: 50vw;  
-      gap:.5rem;  
+      gap:.5rem; 
     }
     button{
         background-color: #FB6CAA;
         border: 1px solid black;
+    }
+    button.popover-button{
+        padding: .3rem 0;
     }
     .image-socials{
         display: flex;
@@ -93,7 +105,6 @@
         justify-content: end;
         margin-left:1rem;
         margin-top:1rem;
-        background-color: white;
         width:calc(50vw - 2rem);
     }
     ul{
@@ -108,8 +119,30 @@
         color:rgb(72, 70, 70);
     }
     #skills-popover, #projects-popover{
-        width:90vw;
+        width:92vw;
         height:83vh;
         background-color: #EFF7F6;
+        overflow: hidden;
+    }
+    .title-close-container{
+        display: flex;
+        justify-content: space-between;
+        padding-left:3rem;
+    }
+    .skills-container{
+        display: flex;
+        width:100%;
+        justify-content: space-around;
+        margin-top:3rem;
+    }
+    .skills{
+        line-height:5rem;
+    }
+    .project-list{
+        margin-top:3rem;
+        /* line-height: 4rem; */
+    }
+    .project-list li{
+        margin-bottom:3rem;
     }
 </style>
