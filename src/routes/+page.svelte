@@ -1,6 +1,14 @@
+<script>
+    export let data
+</script>
+
+
+
+
+
 <main>
     <section class="top-mobile">
-        <h1>Roelie Jansen</h1>
+        <h1>{data.title}</h1>
         <p>
             Roelie is a motivated frontend design & development student at HVA in Amsterdam. 
             She likes to play around with CSS and make cool and funny animations as well as 
@@ -55,9 +63,9 @@
         </section>
 
         <section class="image-socials">
-            <div class="image-container">
-                <img src="astronaut.jpg" alt="astronaut">
-            </div>
+            <picture class="image-container">
+                <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
+            </picture>
 
             <div class="social-links">
                 <ul>
@@ -98,6 +106,13 @@
         width: 50vw;
         height: 15rem;
         margin-top:1rem;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+    }
+    img{
+        max-height:100%;
+        /* max-width:auto; */
     }
     .social-links{
         display: flex;
@@ -146,3 +161,7 @@
         margin-bottom:3rem;
     }
 </style>
+
+<!-- <pre>
+    {JSON.stringify(data,null,2)}
+</pre> -->

@@ -1,0 +1,33 @@
+{
+	"id": "homepage",
+	"label": "homepage",
+	"format": "custom",
+	"repeatable": true,
+	"status": true,
+	"json": {
+		"Main": {
+			"uid": {
+				"config": {
+					"label": "home",
+					"placeholder": ""
+				},
+				"type": "UID"
+			},
+			"title": {
+				"type": "Text",
+				"config": {
+					"label": "title",
+					"placeholder": ""
+				}
+			},
+			"afbeelding": {
+				"type": "Image",
+				"config": {
+					"label": "afbeelding",
+					"constraint": {},
+					"thumbnails": []
+				}
+			}
+		}
+	}
+}

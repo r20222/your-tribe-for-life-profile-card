@@ -20,7 +20,7 @@ const routes = [
 		path: '/'
 	},
 	{
-		type: 'page',
+		type: 'homepage',
 		path: '/:uid'
 	}
 ];
