@@ -97,10 +97,7 @@
         overflow: hidden;
         display:flex;
         justify-content: center;
-    }
-    img{
-        max-height:100%;
-        /* max-width:auto; */
+        border: black solid 1px;
     }
     .social-links{
         display: flex;
@@ -124,7 +121,7 @@
     .title-close-container{
         display: flex;
         justify-content: space-between;
-        padding-left:3rem;
+        margin-left:1rem;
     }
     .skills-container{
         display: flex;
@@ -141,6 +138,8 @@
     }
     .project-list li{
         margin-bottom:3rem;
+        margin-left:1rem;
+        margin-right:1rem;
     }
     /* how to style @html elements: https://stackoverflow.com/questions/56607606/styling-a-html-tag-of-a-svelte-component-by-ising-the-in-component-style */
     :global(a){
@@ -148,6 +147,15 @@
     }
     :global(a:hover){
         color:rgb(72, 70, 70);
+    }
+
+    @media screen and (min-width: 700px){
+        .bottom-mobile{
+            display: none;
+        }
+        .top-mobile{
+            display:none;
+        }
     }
 </style>
 
