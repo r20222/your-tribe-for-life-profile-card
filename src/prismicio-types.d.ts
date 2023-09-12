@@ -29,6 +29,61 @@ interface HomepageDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
 	afbeelding: prismic.ImageField<never>;
+
+	/**
+	 * intro field in *homepage*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.intro
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	intro: prismic.KeyTextField;
+
+	/**
+	 * skillslist field in *homepage*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.skillslist
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	skillslist: prismic.RichTextField;
+
+	/**
+	 * skillslist2 field in *homepage*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.skillslist2
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	skillslist2: prismic.RichTextField;
+
+	/**
+	 * projectlist field in *homepage*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.projectlist
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	projectlist: prismic.RichTextField;
+
+	/**
+	 * sociallinks field in *homepage*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.sociallinks
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	sociallinks: prismic.RichTextField;
 }
 
 /**

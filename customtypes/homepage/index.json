@@ -27,6 +27,49 @@
 					"constraint": {},
 					"thumbnails": []
 				}
+			},
+			"intro": {
+				"type": "Text",
+				"config": {
+					"label": "intro",
+					"placeholder": ""
+				}
+			},
+			"skillslist": {
+				"type": "StructuredText",
+				"config": {
+					"label": "skillslist",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+				}
+			},
+			"skillslist2": {
+				"type": "StructuredText",
+				"config": {
+					"label": "skillslist2",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+				}
+			},
+			"projectlist": {
+				"type": "StructuredText",
+				"config": {
+					"label": "projectlist",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+				}
+			},
+			"sociallinks": {
+				"type": "StructuredText",
+				"config": {
+					"label": "sociallinks",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+				}
 			}
 		}
 	}

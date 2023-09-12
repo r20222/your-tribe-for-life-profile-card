@@ -2,18 +2,10 @@
     export let data
 </script>
 
-
-
-
-
 <main>
     <section class="top-mobile">
         <h1>{data.title}</h1>
-        <p>
-            Roelie is a motivated frontend design & development student at HVA in Amsterdam. 
-            She likes to play around with CSS and make cool and funny animations as well as 
-            serious informative websites about the universe.
-        </p>
+        <p>{data.intro}</p>
     </section>
    
 
@@ -29,16 +21,14 @@
                     </div>
                     <div class="skills-container">
                         <ul class="skills">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Node.JS</li>
+                            {#each data.skillslist as skill}
+                                {@html skill.text}
+                            {/each}
                         </ul>
                         <ul class="skills">
-                            <li>EJS</li>
-                            <li>Svelte</li>
-                            <li>OpenAI</li>
-                            <li>Figma</li>
+                            {#each data.skillslist2 as skill}
+                                {@html skill.text}
+                            {/each}
                         </ul>
                     </div>
                 </div>
@@ -52,12 +42,9 @@
                     </button>
                 </div>
                 <ul class="project-list">
-                    <li><a href="https://r20222.github.io/FDND-First-Year-Portfolio/" title="First Year Portfolio" target="_blank">FDND First Year Portfolio &#8599</a></li>
-                    <li><a href="https://mars-rover-photos.onrender.com/" title="Mars Rover Photos" target="_blank">Mars Rover Photos &#8599</a></li>
-                    <li><a href="https://nasa-astronomy-picture-of-the-day.onrender.com/" title="NASA Astronomy Picture Of The Day" target="_blank">NASA Astronomy Picture Of The Day &#8599</a></li>
-                    <li><a href="https://fuzzy-yak-life-jacket.cyclic.app/" title="iOdigital CV Tool" target="_blank">iOdigital CV Tool &#8599</a></li>
-                    <li><a href="https://r20222.github.io/The-Verve-Agency-Careers/" title="The Verve Agency Careers" target="_blank">The Verve Agency Careers &#8599</a></li>
-                    <li><a href="https://zany-pear-dugong-tux.cyclic.app/" title="Countries" target="_blank">Countries &#8599</a></li>
+                    {#each data.projectlist as project}
+                        <li>{@html project.text}</li>
+                    {/each}
                 </ul>
             </div>
         </section>
@@ -69,8 +56,9 @@
 
             <div class="social-links">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/roelie-jansen/" title="LinkedIn" target="_blank">LinkedIn &#8599</a></li>
-                    <li><a href="https://github.com/r20222" title="GitHub" target="_blank">GitHub &#8599</a></li>
+                    {#each data.sociallinks as link}
+                        <li>{@html link.text}</li>
+                    {/each}
                 </ul>
             </div>
         </section>
@@ -127,12 +115,6 @@
         padding-left:0;
         margin: 0; /* makes the list align to bottom https://stackoverflow.com/questions/32454236/space-between-unordered-lists*/
     }
-    li a{
-        color:black;
-    }
-    li a:hover{
-        color:rgb(72, 70, 70);
-    }
     #skills-popover, #projects-popover{
         width:92vw;
         height:83vh;
@@ -159,6 +141,13 @@
     }
     .project-list li{
         margin-bottom:3rem;
+    }
+    /* how to style @html elements: https://stackoverflow.com/questions/56607606/styling-a-html-tag-of-a-svelte-component-by-ising-the-in-component-style */
+    :global(a){
+        color:black;
+    }
+    :global(a:hover){
+        color:rgb(72, 70, 70);
     }
 </style>
 
