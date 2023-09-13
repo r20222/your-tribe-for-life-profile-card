@@ -70,6 +70,83 @@
 					"allowTargetBlank": true,
 					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
 				}
+			},
+			"html": {
+				"type": "Image",
+				"config": {
+					"label": "html",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"css": {
+				"type": "Image",
+				"config": {
+					"label": "css",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"javascript": {
+				"type": "Image",
+				"config": {
+					"label": "javascript",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"node": {
+				"type": "Image",
+				"config": {
+					"label": "node",
+					"constraint": {
+						"width": 199,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"figma": {
+				"type": "Image",
+				"config": {
+					"label": "figma",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"openai": {
+				"type": "Image",
+				"config": {
+					"label": "openai",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
+			},
+			"svelte": {
+				"type": "Image",
+				"config": {
+					"label": "svelte",
+					"constraint": {
+						"width": 200,
+						"height": 200
+					},
+					"thumbnails": []
+				}
 			}
 		}
 	}

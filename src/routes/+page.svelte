@@ -73,6 +73,29 @@
         </section>
     </section>
 
+    <section class="middle-desktop">
+        <div>
+            <img src="{data.html.url}" alt="{data.html.alt}" title="{data.html.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.css.url}" alt="{data.css.alt}" title="{data.css.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.javascript.url}" alt="{data.javascript.alt}" title="{data.javascript.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.node.url}" alt="{data.node.alt}" title="{data.node.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.svelte.url}" alt="{data.svelte.alt}" title="{data.svelte.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.figma.url}" alt="{data.figma.alt}" title="{data.figma.alt}" width="70">
+        </div>
+        <div>
+            <img src="{data.openai.url}" alt="{data.openai.alt}" title="{data.openai.alt}" width="70">
+        </div>
+    </section>
     <section class="right-desktop">
         <div class="vertical-line"></div>
         <section class="projects-desktop">
@@ -180,7 +203,7 @@
         color:rgb(72, 70, 70);
     }
 
-    .left-desktop, .right-desktop{
+    .left-desktop, .right-desktop, .middle-desktop{
         display: none;
     }
 
@@ -205,12 +228,28 @@
             flex-direction: column;
             justify-content: space-between;
             height:100vh;
-            width:70vw;
+            width:65vw;
             margin-left:1rem;
+        }
+        .middle-desktop{
+            width:5rem;
+            height:90vh;
+            margin-top:5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .middle-desktop div{
+            width:100%;
+            aspect-ratio: 1/1;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .right-desktop{
             display:flex;
-            width:30vw;
+            width:25vw;
         }
 
 

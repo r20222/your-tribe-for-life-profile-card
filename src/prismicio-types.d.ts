@@ -84,6 +84,83 @@ interface HomepageDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
 	 */
 	sociallinks: prismic.RichTextField;
+
+	/**
+	 * html field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.html
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	html: prismic.ImageField<never>;
+
+	/**
+	 * css field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.css
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	css: prismic.ImageField<never>;
+
+	/**
+	 * javascript field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.javascript
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	javascript: prismic.ImageField<never>;
+
+	/**
+	 * node field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.node
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	node: prismic.ImageField<never>;
+
+	/**
+	 * figma field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.figma
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	figma: prismic.ImageField<never>;
+
+	/**
+	 * openai field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.openai
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	openai: prismic.ImageField<never>;
+
+	/**
+	 * svelte field in *homepage*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: homepage.svelte
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	svelte: prismic.ImageField<never>;
 }
 
 /**
