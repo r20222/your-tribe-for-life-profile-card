@@ -8,6 +8,5 @@
     :global(html){
         background-color: #F7F6C5;
         font-family: 'Cinzel Decorative', cursive;
-
     }
 </style>

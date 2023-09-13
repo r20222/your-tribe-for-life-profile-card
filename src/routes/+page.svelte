@@ -8,6 +8,15 @@
         <p>{data.intro}</p>
     </section>
    
+    <section class="left-desktop">
+        <picture class="image-container">
+            <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
+        </picture>
+        <section class="intro-desktop">
+            <h1>{data.title}</h1>
+            <p>{data.intro}</p>
+        </section>
+    </section>
 
     <section class="bottom-mobile">
         <section class="buttons">
@@ -62,6 +71,19 @@
                 </ul>
             </div>
         </section>
+    </section>
+
+    <section class="right-desktop">
+        <div class="vertical-line"></div>
+        <section class="projects-desktop">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                {#each data.projectlist as project}
+                    <li>{@html project.text}</li>
+                {/each}
+            </ul>
+        </section>
+        
     </section>
 </main>
 
@@ -149,12 +171,63 @@
         color:rgb(72, 70, 70);
     }
 
+    .left-desktop, .right-desktop{
+        display: none;
+    }
+
+    /* desktop */
     @media screen and (min-width: 700px){
+        main{
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+
         .bottom-mobile{
             display: none;
         }
         .top-mobile{
             display:none;
+        }
+        .left-desktop{
+            display: block;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height:100vh;
+            width:70vw;
+            margin-left:1rem;
+        }
+        .right-desktop{
+            display:flex;
+            width:30vw;
+        }
+
+
+        .image-container{
+            width: 20rem;
+            height: auto;
+        }
+        .intro-desktop{
+            max-width:40vw;
+            padding-bottom:2rem;
+        }
+        .intro-desktop h1{
+            font-size: 2rem;
+        }
+        .vertical-line{
+            width:3px;
+            margin-top:5vh;
+            height:90vh;
+            background-color: black;
+        }
+        .project-list{
+            margin-top:3rem;   
+        }
+        .projects-desktop h2{
+            margin-left:1rem;
+            margin-top:2rem;
         }
     }
 </style>
