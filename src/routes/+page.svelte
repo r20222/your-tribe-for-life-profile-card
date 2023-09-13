@@ -76,10 +76,19 @@
     <section class="right-desktop">
         <div class="vertical-line"></div>
         <section class="projects-desktop">
-            <h2>Projects</h2>
-            <ul class="project-list">
-                {#each data.projectlist as project}
-                    <li>{@html project.text}</li>
+            <section class="projects-desktop-container">
+                <h2>Projects</h2>
+                <ul class="project-list">
+                    {#each data.projectlist as project}
+                        <li>{@html project.text}</li>
+                    {/each}
+                </ul>
+            </section>
+            
+
+            <ul class="socials-desktop">
+                {#each data.sociallinks as link}
+                    <li>{@html link.text}</li>
                 {/each}
             </ul>
         </section>
@@ -225,9 +234,20 @@
         .project-list{
             margin-top:3rem;   
         }
+        .projects-desktop{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .projects-desktop h2{
             margin-left:1rem;
             margin-top:2rem;
+        }
+        .socials-desktop{
+            padding-bottom: 2rem;
+            display:flex;
+            margin-left:1rem;
+            gap:2rem;
         }
     }
 </style>
