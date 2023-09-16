@@ -2,6 +2,10 @@
     export let data
 </script>
 
+<svelte:head>
+	<title>Visitekaart</title>
+</svelte:head>
+
 <main>
     <section class="top-mobile">
         <h1>{data.title}</h1>
@@ -290,7 +294,7 @@
         }
     }
 </style>
-
-<!-- <pre>
+<!-- 
+<pre>
     {JSON.stringify(data,null,2)}
 </pre> -->
