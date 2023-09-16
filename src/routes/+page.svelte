@@ -260,6 +260,7 @@
         .image-container{
             width: 20rem;
             height: auto;
+            margin-top:5vh;
         }
         .intro-desktop{
             max-width:40vw;
