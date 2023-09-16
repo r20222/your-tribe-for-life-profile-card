@@ -6,131 +6,125 @@
 	<title>Visitekaart</title>
 </svelte:head>
 
-<main>
-    <section class="top-mobile">
+
+<section class="top-mobile">
+    <h1>{data.title}</h1>
+    <p>{data.intro}</p>
+</section>
+
+<section class="left-desktop">
+    <picture class="image-container">
+        <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
+    </picture>
+    <section class="intro-desktop">
         <h1>{data.title}</h1>
         <p>{data.intro}</p>
     </section>
-   
-    <section class="left-desktop">
-        <picture class="image-container">
-            <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
-        </picture>
-        <section class="intro-desktop">
-            <h1>{data.title}</h1>
-            <p>{data.intro}</p>
-        </section>
-    </section>
+</section>
 
-    <section class="bottom-mobile">
-        <section class="buttons">
-            <button class="popover-button" popovertarget="skills-popover">SHOW SKILLS</button>
-                <div id="skills-popover" popover>
-                    <div class="title-close-container">
-                        <h2>Skills</h2>
-                        <button class="popover-close" popovertarget="skills-popover" popovertargetaction="hide">
-                            <span>Close &#10006;</span>
-                        </button>
-                    </div>
-                    <div class="skills-container">
-                        <ul class="skills">
-                            {#each data.skillslist as skill}
-                                {@html skill.text}
-                            {/each}
-                        </ul>
-                        <ul class="skills">
-                            {#each data.skillslist2 as skill}
-                                {@html skill.text}
-                            {/each}
-                        </ul>
-                    </div>
-                </div>
-
-            <button class="popover-button" popovertarget="projects-popover">SHOW PROJECTS</button>
-            <div popover id="projects-popover">
+<section class="bottom-mobile">
+    <section class="buttons">
+        <button class="popover-button" popovertarget="skills-popover">SHOW SKILLS</button>
+            <div id="skills-popover" popover>
                 <div class="title-close-container">
-                    <h2>Projects</h2>
-                    <button class="popover-close" popovertarget="projects-popover" popovertargetaction="hide">
+                    <h2>Skills</h2>
+                    <button class="popover-close" popovertarget="skills-popover" popovertargetaction="hide">
                         <span>Close &#10006;</span>
                     </button>
                 </div>
-                <ul class="project-list">
-                    {#each data.projectlist as project}
-                        <li>{@html project.text}</li>
-                    {/each}
-                </ul>
+                <div class="skills-container">
+                    <ul class="skills">
+                        {#each data.skillslist as skill}
+                            {@html skill.text}
+                        {/each}
+                    </ul>
+                    <ul class="skills">
+                        {#each data.skillslist2 as skill}
+                            {@html skill.text}
+                        {/each}
+                    </ul>
+                </div>
             </div>
-        </section>
 
-        <section class="image-socials">
-            <picture class="image-container">
-                <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
-            </picture>
-
-            <div class="social-links">
-                <ul>
-                    {#each data.sociallinks as link}
-                        <li>{@html link.text}</li>
-                    {/each}
-                </ul>
-            </div>
-        </section>
-    </section>
-
-    <section class="middle-desktop">
-        <div>
-            <img src="{data.html.url}" alt="{data.html.alt}" title="{data.html.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.css.url}" alt="{data.css.alt}" title="{data.css.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.javascript.url}" alt="{data.javascript.alt}" title="{data.javascript.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.node.url}" alt="{data.node.alt}" title="{data.node.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.svelte.url}" alt="{data.svelte.alt}" title="{data.svelte.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.figma.url}" alt="{data.figma.alt}" title="{data.figma.alt}" width="70">
-        </div>
-        <div>
-            <img src="{data.openai.url}" alt="{data.openai.alt}" title="{data.openai.alt}" width="70">
-        </div>
-    </section>
-    <section class="right-desktop">
-        <div class="vertical-line"></div>
-        <section class="projects-desktop">
-            <section class="projects-desktop-container">
+        <button class="popover-button" popovertarget="projects-popover">SHOW PROJECTS</button>
+        <div popover id="projects-popover">
+            <div class="title-close-container">
                 <h2>Projects</h2>
-                <ul class="project-list">
-                    {#each data.projectlist as project}
-                        <li>{@html project.text}</li>
-                    {/each}
-                </ul>
-            </section>
-            
+                <button class="popover-close" popovertarget="projects-popover" popovertargetaction="hide">
+                    <span>Close &#10006;</span>
+                </button>
+            </div>
+            <ul class="project-list">
+                {#each data.projectlist as project}
+                    <li>{@html project.text}</li>
+                {/each}
+            </ul>
+        </div>
+    </section>
 
-            <ul class="socials-desktop">
+    <section class="image-socials">
+        <picture class="image-container">
+            <img src="{data.afbeelding.url}" alt="{data.title}" width="500" >
+        </picture>
+
+        <div class="social-links">
+            <ul>
                 {#each data.sociallinks as link}
                     <li>{@html link.text}</li>
                 {/each}
             </ul>
+        </div>
+    </section>
+</section>
+
+<section class="middle-desktop">
+    <div>
+        <img src="{data.html.url}" alt="{data.html.alt}" title="{data.html.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.css.url}" alt="{data.css.alt}" title="{data.css.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.javascript.url}" alt="{data.javascript.alt}" title="{data.javascript.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.node.url}" alt="{data.node.alt}" title="{data.node.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.svelte.url}" alt="{data.svelte.alt}" title="{data.svelte.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.figma.url}" alt="{data.figma.alt}" title="{data.figma.alt}" width="70">
+    </div>
+    <div>
+        <img src="{data.openai.url}" alt="{data.openai.alt}" title="{data.openai.alt}" width="70">
+    </div>
+</section>
+<section class="right-desktop">
+    <div class="vertical-line"></div>
+    <section class="projects-desktop">
+        <section class="projects-desktop-container">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                {#each data.projectlist as project}
+                    <li>{@html project.text}</li>
+                {/each}
+            </ul>
         </section>
         
+
+        <ul class="socials-desktop">
+            {#each data.sociallinks as link}
+                <li>{@html link.text}</li>
+            {/each}
+        </ul>
     </section>
-</main>
+    
+</section>
+
 
 
 <style>
-    main{
-        height:100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
     .buttons{
       display: flex;
       flex-direction: column;
@@ -213,12 +207,6 @@
 
     /* desktop */
     @media screen and (min-width: 700px){
-        main{
-        height:100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        }
 
         .bottom-mobile{
             display: none;
@@ -255,8 +243,6 @@
             display:flex;
             width:25vw;
         }
-
-
         .image-container{
             width: 20rem;
             height: auto;
