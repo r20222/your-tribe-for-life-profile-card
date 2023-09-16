@@ -2,7 +2,8 @@
 
 Ik heb met Svelte en Prismic.io een visitekaart gemaakt.
 
-![image](https://github.com/r20222/your-tribe-for-life-profile-card/assets/101579892/b7394cea-72b6-43a5-ab0b-90953a35c400)
+![image](https://github.com/r20222/your-tribe-for-life-profile-card/assets/101579892/09ac9c0d-9e04-4277-85ec-c3f522bafc1e)
+
 
 
 ## Tools
