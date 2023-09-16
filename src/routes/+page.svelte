@@ -55,9 +55,12 @@
                 </button>
             </div>
             <ul class="project-list">
-                {#each data.projectlist as project}
-                    <li>{@html project.text}</li>
-                {/each}
+                <li><a href="{data.projectportfolio.url}" target="{data.projectportfolio.target}" title="First Year Portfolio">FDND First Year Portfolio &#8599;</a></li>
+                <li><a href="{data.marsrover.url}" target="{data.marsrover.target}" title="Mars Rover Photos">Mars Rover Photos &#8599;</a></li>
+                <li><a href="{data.nasa.url}" target="{data.nasa.target}" title="NASA Astronomy Picture Of The Day">NASA Astronomy Picture Of The Day &#8599;</a></li>
+                <li><a href="{data.iodigital.url}" target="{data.iodigital.target}" title="iOdigital CV Tool">iOdigital CV Tool &#8599;</a></li>
+                <li><a href="{data.theverve.url}" target="{data.theverve.target}" title="The Verve Agency Careers">The Verve Agency Careers &#8599;</a></li>
+                <li><a href="{data.countries.url}" target="{data.countries.target}" title="Countries">Countries &#8599;</a></li>
             </ul>
         </div>
     </section>
@@ -69,9 +72,8 @@
 
         <div class="social-links">
             <ul>
-                {#each data.sociallinks as link}
-                    <li>{@html link.text}</li>
-                {/each}
+                <li><a href="{data.linkedin.url}" target="{data.linkedin.target}" title="LinkedIn">LinkedIn &#8599;</a></li>
+                <li><a href="{data.github.url}" target="{data.github.target}" title="Github">Github &#8599;</a></li>
             </ul>
         </div>
     </section>
@@ -106,17 +108,19 @@
         <section class="projects-desktop-container">
             <h2>Projects</h2>
             <ul class="project-list">
-                {#each data.projectlist as project}
-                    <li>{@html project.text}</li>
-                {/each}
+                <li><a href="{data.projectportfolio.url}" target="{data.projectportfolio.target}" title="First Year Portfolio">FDND First Year Portfolio &#8599;</a></li>
+                <li><a href="{data.marsrover.url}" target="{data.marsrover.target}" title="Mars Rover Photos">Mars Rover Photos &#8599;</a></li>
+                <li><a href="{data.nasa.url}" target="{data.nasa.target}" title="NASA Astronomy Picture Of The Day">NASA Astronomy Picture Of The Day &#8599;</a></li>
+                <li><a href="{data.iodigital.url}" target="{data.iodigital.target}" title="iOdigital CV Tool">iOdigital CV Tool &#8599;</a></li>
+                <li><a href="{data.theverve.url}" target="{data.theverve.target}" title="The Verve Agency Careers">The Verve Agency Careers &#8599;</a></li>
+                <li><a href="{data.countries.url}" target="{data.countries.target}" title="Countries">Countries &#8599;</a></li>
             </ul>
         </section>
         
 
         <ul class="socials-desktop">
-            {#each data.sociallinks as link}
-                <li>{@html link.text}</li>
-            {/each}
+            <li><a href="{data.linkedin.url}" target="{data.linkedin.target}" title="LinkedIn">LinkedIn &#8599;</a></li>
+            <li><a href="{data.github.url}" target="{data.github.target}" title="Github">Github &#8599;</a></li>
         </ul>
     </section>
     
@@ -281,7 +285,8 @@
         }
     }
 </style>
-<!-- 
-<pre>
+
+<!-- <pre>
     {JSON.stringify(data,null,2)}
 </pre> -->
+

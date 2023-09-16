@@ -53,24 +53,6 @@
 					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
 				}
 			},
-			"projectlist": {
-				"type": "StructuredText",
-				"config": {
-					"label": "projectlist",
-					"placeholder": "",
-					"allowTargetBlank": true,
-					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-				}
-			},
-			"sociallinks": {
-				"type": "StructuredText",
-				"config": {
-					"label": "sociallinks",
-					"placeholder": "",
-					"allowTargetBlank": true,
-					"multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-				}
-			},
 			"html": {
 				"type": "Image",
 				"config": {
@@ -146,6 +128,78 @@
 						"height": 200
 					},
 					"thumbnails": []
+				}
+			},
+			"projectportfolio": {
+				"type": "Link",
+				"config": {
+					"label": "projectportfolio",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"marsrover": {
+				"type": "Link",
+				"config": {
+					"label": "marsrover",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"nasa": {
+				"type": "Link",
+				"config": {
+					"label": "nasa",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"iodigital": {
+				"type": "Link",
+				"config": {
+					"label": "iodigital",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"theverve": {
+				"type": "Link",
+				"config": {
+					"label": "theverve",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"countries": {
+				"type": "Link",
+				"config": {
+					"label": "countries",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"linkedin": {
+				"type": "Link",
+				"config": {
+					"label": "linkedin",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
+				}
+			},
+			"github": {
+				"type": "Link",
+				"config": {
+					"label": "github",
+					"placeholder": "",
+					"allowTargetBlank": true,
+					"select": null
 				}
 			}
 		}
